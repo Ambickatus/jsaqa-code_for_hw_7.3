@@ -1,6 +1,7 @@
 const { test, expect } = require("@playwright/test");
+const { chromium } = require("playwright");
 
-test("test", async ({ page }) => {
+test("Успешная авторизация", async ({ page }) => {
   // Go to https://netology.ru/free/management#/
   await page.goto("https://netology.ru/free/management#/");
 
